@@ -1,0 +1,20 @@
+.scrollToTopButton {
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* Position from the bottom of the viewport */
+  right: 20px; /* Position from the right of the viewport */
+  padding: 8px 10px 8px 10px;
+  background-color: #0096c8; /* Example color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Hide by default and show only when needed via JavaScript */
+.scrollToTopButton {
+  display: none;
+}
+.scrollToTopButton {
+  display: block; /* Now the button will show when rendered */
+}

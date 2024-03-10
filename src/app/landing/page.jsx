@@ -1,3 +1,4 @@
+"use client";
 import Navigation from "@/components/Header/Header";
 import LandingBanner from "@/components/LandingBanner/Banner";
 import Decoration from "@/ui/DecorationCards/Card";
@@ -7,15 +8,36 @@ import Footer from "@/ui/Footer/Footer";
 import SignupTab from "@/ui/SignupTab/SignupTab";
 import Testimonial from "@/ui/Testimonial/Testimonial";
 import Image from "next/image";
-import React from "react";
+import { useState, useEffect } from "react";
 import { Col, Container, Row, Stack } from "react-bootstrap";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { MdPlace } from "react-icons/md";
 import { IoBagHandleSharp } from "react-icons/io5";
 import { FaCalendarCheck } from "react-icons/fa";
 import { IoMdAddCircle } from "react-icons/io";
+import ScrollToTopButton from "@/components/ScrollToTop/ScrollToTop";
 
 export default function Page() {
+  const [showScroll, setShowScroll] = useState(false);
+
+  useEffect(() => {
+    const checkScrollTop = () => {
+      if (!showScroll && window.pageYOffset > 400) {
+        // Adjust the number based on when you want the button to appear
+        setShowScroll(true);
+      } else if (showScroll && window.pageYOffset <= 400) {
+        setShowScroll(false);
+      }
+    };
+
+    window.addEventListener("scroll", checkScrollTop);
+
+    // Clean up the listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", checkScrollTop);
+    };
+  }, [showScroll]);
+
   const decorations = [
     {
       title: "People",
@@ -115,6 +137,7 @@ export default function Page() {
         <EndBanner />
         <Footer />
       </Stack>
+      {showScroll && <ScrollToTopButton />}
     </>
   );
 }
