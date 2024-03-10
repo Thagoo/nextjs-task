@@ -1,0 +1,38 @@
+.landingContainer {
+  padding-top: 200px;
+  background-color: #f7f5f9;
+}
+.container-global {
+  overflow-x: hidden;
+}
+.desktopImage {
+  display: none;
+}
+/* outline-custom Bootstrap button */
+.btn-custom {
+  color: white !important;
+  background-color: #8064a2 !important;
+  font-weight: 600 !important;
+}
+.btn-outline-custom {
+  color: #8064a2 !important;
+  font-weight: 400;
+  border-color: #8064a2 !important;
+  font-weight: 600 !important;
+}
+.btn-outline-custom:hover {
+  color: white !important;
+  background-color: #8064a2 !important;
+  font-weight: 400;
+  border-color: #8064a2 !important;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .desktopImage {
+    display: block;
+  }
+  .mobileImage {
+    display: none;
+  }
+}

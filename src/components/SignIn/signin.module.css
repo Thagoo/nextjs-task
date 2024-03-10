@@ -1,0 +1,72 @@
+.formContainer {
+  padding-top: 10px;
+}
+.authButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Assuming you want specific colors for Google and Facebook buttons */
+.googleBtn {
+  border-color: #4285f4; /* Google blue */
+  color: #4285f4;
+}
+
+.facebookBtn {
+  border-color: #4267b2; /* Facebook blue */
+  color: #4267b2;
+}
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+}
+
+.iconStart {
+  margin-right: auto; /* Pushes other items to the opposite end */
+}
+
+.centerText {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+.lineBreak {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  font-weight: 600;
+  font-size: 14px;
+  flex-direction: row;
+}
+.lineBreak:before,
+.lineBreak:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+.lineBreak:before {
+  margin-right: 10px;
+}
+.lineBreak:after {
+  margin-left: 10px;
+}
+.agreementText {
+  font-weight: 300;
+  font-size: small;
+}
+
+@media (max-width: 768px) {
+  .agreementText {
+    font-weight: 300;
+    font-size: x-small;
+  }
+  .lineBreak {
+    font-size: smaller;
+  }
+}

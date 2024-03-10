@@ -1,0 +1,161 @@
+.bannerTitle {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.textContainer {
+  margin-top: 40px;
+}
+.bannerText {
+  font-stretch: expanded;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+@media (max-width: 1536px) {
+  .bannerContainer {
+    overflow-x: hidden;
+    width: 1366px;
+  }
+  .bannerTitle {
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .textContainer {
+    margin-top: 40px;
+  }
+  .bannerText {
+    font-stretch: expanded;
+    line-height: 30px;
+    font-weight: 300;
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 1366px) {
+  .bannerContainer {
+    overflow-x: hidden;
+    width: 1280px;
+  }
+  .bannerTitle {
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .textContainer {
+    margin-top: 40px;
+  }
+  .bannerText {
+    font-stretch: expanded;
+    line-height: 30px;
+    font-weight: 300;
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 1280px) {
+  .bannerContainer {
+    overflow-x: hidden;
+    width: 1024px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .bannerTitle {
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .textContainer {
+    margin-top: 40px;
+  }
+  .bannerText {
+    font-stretch: expanded;
+    line-height: 30px;
+    font-weight: 300;
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bannerContainer {
+    overflow-x: hidden;
+    width: 768px;
+  }
+  .bannerTitle {
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .textContainer {
+    margin-top: 40px;
+  }
+  .bannerText {
+    font-stretch: expanded;
+    line-height: 30px;
+    font-weight: 300;
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 768px) {
+  .bannerContainer {
+    overflow-x: hidden;
+    width: 640px;
+  }
+  .bannerTitle {
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .textContainer {
+    margin-top: 40px;
+  }
+  .bannerText {
+    font-stretch: expanded;
+    line-height: 30px;
+    font-weight: 300;
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 640px) {
+  .bannerContainer {
+    overflow-x: hidden;
+    width: 475px;
+  }
+  .bannerTitle {
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .textContainer {
+    margin-top: 40px;
+  }
+  .bannerText {
+    font-stretch: expanded;
+    line-height: 30px;
+    font-weight: 300;
+    font-size: smaller;
+  }
+}
+@media (max-width: 475px) {
+  .bannerContainer {
+    overflow-x: hidden;
+    width: 380px;
+  }
+  .bannerTitle {
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .textContainer {
+    margin-top: 40px;
+  }
+  .bannerText {
+    font-stretch: expanded;
+    line-height: 30px;
+    font-weight: 300;
+    font-size: smaller;
+  }
+}

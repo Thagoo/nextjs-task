@@ -1,0 +1,101 @@
+.container {
+  min-height: 100vh;
+  padding-top: 100px;
+}
+.flexContainer {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  width: 60%;
+}
+.rectangle {
+  min-height: 30vh;
+  padding: 18px;
+  transition: background-color 0.4s, color 0.4s;
+  border-radius: 8px;
+}
+
+.header {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.iconTitle {
+  font-size: 22px;
+  font-weight: 600;
+}
+.title {
+  color: black;
+}
+.rectangle-1 {
+  border: 2px solid #8064a2;
+}
+.rectangle-2 {
+  border: 2px solid #77933c;
+}
+.rectangle-3 {
+  border: 2px solid #c0504d;
+}
+.rectangle-4 {
+  border: 2px solid #0096c8;
+}
+
+/* Hover states */
+.rectangle-1:hover {
+  background-color: #8064a2;
+  color: white;
+}
+.rectangle-2:hover {
+  background-color: #77933c;
+  color: white;
+}
+.rectangle-3:hover {
+  background-color: #c0504d;
+  color: white;
+}
+.rectangle-4:hover {
+  background-color: #0096c8;
+  color: white;
+}
+
+/* Ensuring icons have initial color same as border and turn white on hover */
+.rectangle-1 .icon {
+  color: #8064a2;
+}
+.rectangle-2 .icon {
+  color: #77933c;
+}
+.rectangle-3 .icon {
+  color: #c0504d;
+}
+.rectangle-4 .icon {
+  color: #0096c8;
+}
+.rectangle:hover .icon {
+  color: white;
+}
+
+.rectangle:hover .title {
+  color: white;
+}
+@media (max-width: 768px) {
+  .flexContainer {
+    height: 100vh;
+    width: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .flexContainer {
+    height: 100vh;
+    width: auto;
+  }
+}
+@media (max-width: 475px) {
+  .flexContainer {
+    height: 100vh;
+    width: auto;
+  }
+}

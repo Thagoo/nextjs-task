@@ -1,0 +1,7 @@
+.container {
+  background-color: #f7fdff;
+  padding: 40px;
+}
+.button {
+  align-self: flex-start;
+}

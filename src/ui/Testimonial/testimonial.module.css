@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 20px 20px 20px 20px;
+  background-color: #f7f5f9;
+  border: none;
+}
+.icon {
+  color: #8064a2;
+}
+.title {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.text {
+  font-weight: 300;
+  font-size: 1rem;
+}

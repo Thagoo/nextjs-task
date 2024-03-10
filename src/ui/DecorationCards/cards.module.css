@@ -1,0 +1,35 @@
+.container {
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 20px;
+}
+.card {
+  flex-direction: column;
+  justify-content: space-between;
+  display: inline-flex;
+}
+.button {
+  min-width: 150px;
+  align-self: flex-start;
+}
+.iconTitle {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .button {
+    align-self: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .button {
+    align-self: auto;
+  }
+}
+@media (max-width: 475px) {
+  .button {
+    align-self: auto;
+  }
+}
