@@ -3,6 +3,7 @@ import Signin from "@/components/SignIn/Signin";
 import React from "react";
 import { Container, Tab, Tabs } from "react-bootstrap";
 import styles from "./signuptab.module.css";
+import Joinin from "@/components/JoinIn/Joinin";
 
 export default function SignupTab({ children }) {
   return (
@@ -21,7 +22,7 @@ export default function SignupTab({ children }) {
               eventKey="register"
               title={<span className={styles.tabButton}>Join In</span>}
             >
-              <Signin />
+              <Joinin />
             </Tab>
           </Tabs>
         </Tab.Container>

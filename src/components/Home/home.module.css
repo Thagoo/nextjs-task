@@ -9,7 +9,9 @@
   width: 60%;
 }
 .rectangle {
-  min-height: 30vh;
+  min-height: 30lvh;
+  max-height: 30lvh;
+  overflow: hidden;
   padding: 18px;
   transition: background-color 0.4s, color 0.4s;
   border-radius: 8px;

@@ -3,12 +3,10 @@ import { Formik } from "formik";
 import * as yup from "yup";
 import { FaGoogle } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-import { FaLock } from "react-icons/fa";
-import styles from "./signin.module.css";
+import styles from "./joinin.module.css";
 import { Button, Container, Form, InputGroup, Stack } from "react-bootstrap";
-import Link from "next/link";
 
-export default function Signin() {
+export default function Joinin() {
   const loginSchema = yup.object().shape({
     email: yup.string().email().required("Email is required"),
     passwd: yup.string().required("Password is required"),
@@ -96,18 +94,13 @@ export default function Signin() {
                   {errors.password}
                 </Form.Control.Feedback>
               </Form.Group>
-              <div className="mb-3 d-flex">
-                <Form.Check
-                  type="checkbox"
-                  label="Remember me"
-                  className="me-auto "
-                />
-                <Link href="#" className="text-decoration-none text-black">
-                  Forgot Password
-                </Link>
-              </div>
+              <p className={styles.agreementText}>
+                By continuing, you agree to our{" "}
+                <span style={{ fontWeight: "bold" }}>Terms of Service</span> and{" "}
+                <span style={{ fontWeight: "bold" }}>Privacy Policy</span>
+              </p>
               <Button variant="custom" style={{ width: `100%` }} type="submit">
-                <span style={{ fontWeight: "bold" }}> Continue</span>
+                <span style={{ fontWeight: "bold" }}>Agree and Continue</span>
               </Button>
             </Stack>
           </Form>
