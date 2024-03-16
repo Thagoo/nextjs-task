@@ -44,7 +44,7 @@ function Navigation() {
           <Navbar.Toggle
             aria-controls="navbarScroll"
             style={{ border: "none" }}
-            className=" mx-2"
+            className="align-self-center mx-2"
           >
             {" "}
             <span>
