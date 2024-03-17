@@ -11,7 +11,7 @@ export default function Testimonial() {
         <Stack direction="vertical" gap={4}>
           <Container className="d-flex">
             {" "}
-            <ImQuotesLeft size={30} color="#8064a2" className="me-2" />,
+            <ImQuotesLeft size={30} color="#8064a2" className="me-2" />
             <Card.Title className={styles.title}>Testimonials</Card.Title>
           </Container>
           <Card.Text className={styles.text}>
