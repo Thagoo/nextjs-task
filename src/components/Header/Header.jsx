@@ -51,7 +51,7 @@ function Navigation() {
               <FiMenu />
             </span>
           </Navbar.Toggle>
-          <NavbarBrand href="#">
+          <Link href="/">
             <Image
               src={"/hobby-logo-mobile.jpg"}
               height={30}
@@ -64,7 +64,7 @@ function Navigation() {
               width={150}
               className="d-none d-lg-block"
             />
-          </NavbarBrand>
+          </Link>
         </Nav>
         <Nav.Link href="#" className="d-lg-none order-1 mx-2">
           <FaMagnifyingGlass size={20} color="#8064a2" />
