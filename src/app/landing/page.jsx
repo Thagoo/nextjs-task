@@ -74,7 +74,6 @@ export default function Page() {
 
   return (
     <>
-      <Navigation />
       <Stack direction="vertical" gap={5}>
         <Container className="landingContainer" fluid>
           <Container>
@@ -135,7 +134,6 @@ export default function Page() {
         </Container>
 
         <EndBanner />
-        <Footer />
       </Stack>
       {showScroll && <ScrollToTopButton />}
     </>

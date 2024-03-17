@@ -1,5 +1,4 @@
 .container {
-  min-height: 100vh;
   padding-top: 100px;
 }
 .flexContainer {
@@ -84,20 +83,17 @@
 }
 @media (max-width: 768px) {
   .flexContainer {
-    height: 100vh;
     width: auto;
   }
 }
 
 @media (max-width: 640px) {
   .flexContainer {
-    height: 100vh;
     width: auto;
   }
 }
 @media (max-width: 475px) {
   .flexContainer {
-    height: 100vh;
     width: auto;
   }
 }
